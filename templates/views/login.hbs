@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+{{>header}}
+<body>
+<div class="container">
+    {{>navbar}}
+    <div class="login">
+        <h1 class="heading">Employee Login Form</h1>
+        <p class="heading">-> developed by Ragnar</p>           
+        <div class="loginMain">
+            <div class="form">
+                <form action="/login" method="POST">
+                    <input type="text" name="email" placeholder="Email *" required value="">
+                    <input type="password" name="pass" required placeholder="Password *"  value="">
+                    <label>
+                        <input type="radio" name="remenberme" value="false">
+                        <span>Remember me</span>
+                        <a href="#">Need help?</a>
+                    </label>
+                    <button type="submit" value="login">Sign in</button>
+                </form>
+            </div>
+        </div>
+    </div>
+    {{>footer}}
+</div>
+</body>
+</html>

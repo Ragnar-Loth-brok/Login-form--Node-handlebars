@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+{{>header}}
+<body>
+    <div class="container">
+        {{>navbar}}
+        <div class="register">
+            <h1 class="heading">Employee Registration Form</h1>
+            <p class="heading">-> developed by Ragnar</p>           
+            <div class="regisMain">
+                <div class="form">
+                    <form action="/register" method="POST">
+                            <input type="text" name="fname" placeholder="First Name *" value="">
+                            <input type="text" name="lname" placeholder="Last Name *"  value="">
+                            <input type="text" name="email" placeholder="Email *"  value="">
+                            <input type="text" name="age" placeholder="Age *"  value="">
+                            <input type="password" name="initPass" placeholder="Password"  value="">
+                            <input type="password" name="confirmPass" placeholder="Confirm Password"  value="">
+                            <input type="phone" name="phone" placeholder="Phone *"  value="">
+                            <div class="gender">
+                                <label>
+                                    <input type="radio" name="gender" value="male" checked>
+                                    <span>Male</span>
+                                </label>
+                                <label>
+                                    <input type="radio" name="gender" value="female">
+                                    <span>Female</span>
+                                </label>
+                            </div>
+                        <button type="submit" value="Regsiter" >Register</button>
+                    </form>
+                </div>
+            </div>
+            
+        </div>
+        {{>footer}}
+    </div>
+    
+</body>
+</html>

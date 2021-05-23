@@ -1,0 +1,294 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: comic sans ms;
+}
+body{
+    text-align: center;
+}
+.container{
+    width: 98.9vw;
+    overflow: hidden;
+}
+.banner{
+    background: url('/images/bg1.jpg');
+    background-size: cover;
+    background-position: 0% 49%;
+    height: 400px;
+}
+nav{
+    margin: 0px auto;
+    width: 90vw;
+    background-color: rgba(0, 0, 0, 0.2);
+    border-radius: 50%;
+    z-index: 1;
+}
+nav:hover{
+    background-color: rgba(0, 0, 0, 0.1);
+}
+ul{
+    height: 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+li{
+    padding: 10px 60px;
+    list-style: none;
+    color: cadetblue;
+    font-size: 18px;
+    font-weight: bold;
+    letter-spacing: 5px;
+}
+a{
+    margin: 0px 30px;
+    padding: 2px;
+    text-decoration: none;
+    color: rgb(136, 136, 136);
+    text-transform: capitalize;
+    letter-spacing: 2px;
+}
+a:hover{
+    color: steelblue;
+}
+.banner .heading{
+    margin-top: 80px;
+    color: darkslateblue;
+}
+.banner .heading h1{
+    font-size: 3.5rem;
+}
+.banner .heading p{
+    font-size: 1.2rem;
+    margin-top: 20px;
+}
+.footer{
+    background: url('/images/footer1.jpg');
+    background-size: contain;
+    width: 100vw;
+    height: 60px;
+}
+.main{
+    width: 90vw;
+    display: flex;
+    justify-content: space-around;
+    letter-spacing: 2px;
+    margin: 100px auto;
+    text-align: left;
+}
+
+
+
+/* My Register Form */
+
+.register{
+    position: relative;
+    display: flex;
+    align-items: center;
+    flex-flow: row-reverse;
+    margin: 30px 60px;
+    width: 80vw;
+    height: 600px;
+    background: url('/images/signup-4.jpg');
+    background-size: cover;
+}
+.register .regisMain{
+    width: 55vw;
+    height: 550px;
+    margin: auto -80px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background: url('/images/signup-5.png');
+    background-size: cover;
+    border-top-left-radius: 50%;
+    border-bottom-left-radius: 50%;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    box-shadow: 10px 5px 10px 10px rgba(255, 255, 255, 0.4);
+}
+.register form input{
+    text-align: center;
+    width: 350px;
+    height: 35px;
+    margin: 20px;
+    background: rgba(0, 0, 0, 0.6);
+    outline: none;
+    border: none;
+    border-radius: 30%;
+    font-size: 20px;
+    padding: 5px 10px;
+    color: rgba(255, 255, 255, 0.6);
+}
+.register form input:focus{
+    background: rgba(0, 0, 0, 0.8);
+    color: seashell;
+}
+.register form button{
+    position: absolute;
+    transform: translate(-40px, 130px);
+    width: 200px;
+    height: 50px;
+    font-size: 20px;
+    border: none;
+    outline: none;
+    background-color: steelblue;
+    color: seashell;
+    border-radius: 10px;
+    cursor: pointer;
+    text-transform: capitalize;
+    font-weight: 600;
+    letter-spacing: 4px;
+}
+.register form button:hover{
+    background-color: seashell;
+    color: #0099cc;
+}
+.register .heading{
+    max-width: 500px;
+    font-size: 3rem;
+    position: absolute;
+    left: 20px;
+    top: 140px;
+    color: rgba(255, 255, 255, 0.6);
+}
+.register p.heading{
+    font-size: 1rem;
+    top: 280px;
+    left: 280px;
+}
+.register form .gender{
+    position: absolute;
+    top: 75px;
+    right: 40px;
+    display: flex;
+    background-color: rgba(0, 0, 0, 0.6);
+    padding: 10px 20px;
+    border-radius: 20px;
+}
+.register form .gender label{
+    display: flex;
+}
+.register form .gender label input{
+    margin: 5px;
+    font-size: 8px;
+    width: 20px;
+    height: 20px;
+    opacity: 0.7;
+}
+.register form .gender span{
+    margin-right: 20px;
+    padding: 3px;
+    letter-spacing: 3px;
+    color: seashell;
+    opacity: 0.7;
+    
+}
+
+/* Login form */
+
+.login{
+    position: relative;
+    display: flex;
+    align-items: center;
+    flex-flow: row-reverse;
+    margin: 30px auto;
+    width: 80vw;
+    height: 600px;
+    background: url('/images/loginback1.jpg');
+    background-position-y: -50px;
+    background-size: cover;
+}
+.login .loginMain{
+    position: relative;
+    top: 120px;
+    width: 30vw;
+    height: 500px;
+    margin: auto;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background: url('/images/mainback2.png');
+    background-size: cover;
+    border-top-left-radius: 50%;
+    border-top-right-radius: 50%;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    box-shadow: 10px 5px 10px 10px rgba(255, 255, 255, 0.4);
+}
+.login form input{
+    text-align: center;
+    width: 350px;
+    height: 35px;
+    margin: 20px;
+    background: rgba(0, 0, 0, 0.7);
+    outline: none;
+    border: none;
+    border-radius: 30%;
+    font-size: 20px;
+    padding: 5px 10px;
+    color: rgba(255, 255, 255, 0.6);
+}
+.login form input:focus{
+    background: rgba(0, 0, 0, 0.8);
+    color: seashell;
+}
+.login form button{
+    margin-top: 20px;
+    width: 200px;
+    height: 50px;
+    font-size: 20px;
+    border: none;
+    outline: none;
+    background-color: steelblue;
+    color: seashell;
+    border-radius: 10px;
+    cursor: pointer;
+    font-weight: 600;
+    letter-spacing: 4px;
+}
+.login form button:hover{
+    background-color: rgba(0, 0, 0, 0.8);
+    color: #0099cc;
+}
+.login .heading{
+    max-width: 500px;
+    font-size: 3rem;
+    position: absolute;
+    left: 400px;
+    top: 30px;
+    color: rgba(255, 255, 255, 0.6);
+}
+.login p.heading{
+    font-size: 1rem;
+    top: 100px;
+    left: 800px;
+}
+.login form label{
+    margin: 30px auto;
+    display: flex;
+    transform: translateX(130px);
+}
+.login form label input{
+    margin: 5px;
+    font-size: 8px;
+    width: 20px;
+    height: 20px;
+    opacity: 0.7;
+    cursor: pointer;
+}
+.login form span{
+    padding: 3px;
+    letter-spacing: 3px;
+    color: seashell;
+    opacity: 0.7;
+    cursor: pointer;
+}
+.login form a{
+    transform: translatex(-20px);
+    color: steelblue;
+    font-weight: bolder;
+    text-decoration: underline;
+    cursor: pointer;
+}
